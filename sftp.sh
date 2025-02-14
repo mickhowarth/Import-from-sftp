@@ -10,7 +10,7 @@ USER='myusername'   # username also change
 #PASSWD='passwordforreference'    # password also change - not using this line in this script but a handy place to keep the pass
 sshpass -p 'password-goes-here' sftp -P 2222 $USER@$HOST<<EOF #bash command that connects to the sftp server
 cd out # file location on the sftp server
-lcd "/home/file_location/" # file location in the recieving machine
+lcd "/home/file_location/" # file location in the receiving machine
 mget yourfileplusextention.csv
 bye
 EOF
